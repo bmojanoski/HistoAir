@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e441a31e-c3ad-4f38-b220-88f7b2438e11" name="Default Changelist" comment="" />
+    <list default="true" id="e441a31e-c3ad-4f38-b220-88f7b2438e11" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WBS-webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -48,6 +51,23 @@
       <recent name="C:\Users\user\Desktop\histoair-frontend\src\components\Home" />
       <recent name="C:\Users\user\Desktop\histoair-frontend\src\components\Accordion" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -64,6 +84,8 @@
       <workItem from="1586462508597" duration="9667000" />
       <workItem from="1586474872437" duration="6729000" />
       <workItem from="1586535374233" duration="4541000" />
+      <workItem from="1586542333275" duration="658000" />
+      <workItem from="1586543068460" duration="1181000" />
     </task>
     <servers />
   </component>
@@ -100,35 +122,35 @@
       <screen x="0" y="0" width="1440" height="868" />
     </state>
     <state x="500" y="188" key="FileChooserDialogImpl/1440.68.1366.736/0.0.1440.868@0.0.1440.868" timestamp="1586533455364" />
-    <state width="1345" height="118" key="GridCell.Tab.0.bottom" timestamp="1586462321069">
+    <state width="1419" height="225" key="GridCell.Tab.0.bottom" timestamp="1586543962779">
       <screen x="0" y="0" width="1440" height="868" />
     </state>
     <state width="1345" height="118" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1586388233994" />
-    <state width="1345" height="118" key="GridCell.Tab.0.bottom/1440.68.1366.736/0.0.1440.868@0.0.1440.868" timestamp="1586462321069" />
-    <state width="1345" height="118" key="GridCell.Tab.0.center" timestamp="1586462321068">
+    <state width="1419" height="225" key="GridCell.Tab.0.bottom/1440.68.1366.736/0.0.1440.868@0.0.1440.868" timestamp="1586543962779" />
+    <state width="1419" height="225" key="GridCell.Tab.0.center" timestamp="1586543962779">
       <screen x="0" y="0" width="1440" height="868" />
     </state>
     <state width="1345" height="118" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1586388233994" />
-    <state width="1345" height="118" key="GridCell.Tab.0.center/1440.68.1366.736/0.0.1440.868@0.0.1440.868" timestamp="1586462321068" />
-    <state width="1345" height="118" key="GridCell.Tab.0.left" timestamp="1586462321068">
+    <state width="1419" height="225" key="GridCell.Tab.0.center/1440.68.1366.736/0.0.1440.868@0.0.1440.868" timestamp="1586543962779" />
+    <state width="1419" height="225" key="GridCell.Tab.0.left" timestamp="1586543962779">
       <screen x="0" y="0" width="1440" height="868" />
     </state>
     <state width="1345" height="118" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1586388233993" />
-    <state width="1345" height="118" key="GridCell.Tab.0.left/1440.68.1366.736/0.0.1440.868@0.0.1440.868" timestamp="1586462321068" />
-    <state width="1345" height="118" key="GridCell.Tab.0.right" timestamp="1586462321069">
+    <state width="1419" height="225" key="GridCell.Tab.0.left/1440.68.1366.736/0.0.1440.868@0.0.1440.868" timestamp="1586543962779" />
+    <state width="1419" height="225" key="GridCell.Tab.0.right" timestamp="1586543962779">
       <screen x="0" y="0" width="1440" height="868" />
     </state>
     <state width="1345" height="118" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1586388233994" />
-    <state width="1345" height="118" key="GridCell.Tab.0.right/1440.68.1366.736/0.0.1440.868@0.0.1440.868" timestamp="1586462321069" />
+    <state width="1419" height="225" key="GridCell.Tab.0.right/1440.68.1366.736/0.0.1440.868@0.0.1440.868" timestamp="1586543962779" />
     <state x="221" y="76" key="SettingsEditor" timestamp="1586464580124">
       <screen x="0" y="0" width="1440" height="868" />
     </state>
     <state x="221" y="76" key="SettingsEditor/1440.68.1366.736/0.0.1440.868@0.0.1440.868" timestamp="1586464580124" />
-    <state x="400" y="64" width="640" height="804" key="find.popup" timestamp="1586470732027">
+    <state x="400" y="64" width="640" height="804" key="find.popup" timestamp="1586542984742">
       <screen x="0" y="0" width="1440" height="868" />
     </state>
     <state x="379" y="100" width="607" height="536" key="find.popup/0.0.1366.736@0.0.1366.736" timestamp="1586429930687" />
-    <state x="400" y="64" width="640" height="804" key="find.popup/1440.68.1366.736/0.0.1440.868@0.0.1440.868" timestamp="1586470732027" />
+    <state x="400" y="64" width="640" height="804" key="find.popup/1440.68.1366.736/0.0.1440.868@0.0.1440.868" timestamp="1586542984742" />
     <state x="339" y="164" key="run.anything.popup" timestamp="1586433340053">
       <screen x="0" y="0" width="1366" height="736" />
     </state>

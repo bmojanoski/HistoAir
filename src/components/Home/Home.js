@@ -17,24 +17,25 @@ class Home extends React.Component {
             flightByCountryList: [],
             flightByAirportList: [],
             flightByCallsignList: [],
-            flightByEstimatedList:[],
-            flightByTimeOfList:[],
+            flightByEstimatedList: [],
+            flightByTimeOfList: [],
             showLoader: false,
-            show:false,
+            show: true,
         };
     }
 
-    addCountry = (country,info) => {
+    addCountry = (country, info) => {
         this.setState({
             flightByCountryList: [],
-            flightByAirportList:[],
-            flightByCallsignList:[],
-            flightByEstimatedList:[],
-            flightByTimeOfList:[],
+            flightByAirportList: [],
+            flightByCallsignList: [],
+            flightByEstimatedList: [],
+            flightByTimeOfList: [],
             showLoader: !this.state.showLoader,
+            show: true
         });
         const countryStr = country.length > 0 ? country : "USA";
-        HistoAirService.fetchFlights(countryStr,info).then((response) => {
+        HistoAirService.fetchFlights(countryStr, info).then((response) => {
             const newFlights = response.data;
             this.setState((prevState) => {
                 const newFlightsRef = [...newFlights];
@@ -45,22 +46,23 @@ class Home extends React.Component {
             this.setState({
                 showLoader: !this.state.showLoader,
             });
-            if(this.state.flightByCountryList.length < 1 ) this.setState({show:true});
+            if (this.state.flightByCountryList.length < 1) this.setState({show: false});
         });
 
     };
 
-    addAirport = (airport,info) => {
+    addAirport = (airport, info) => {
         this.setState({
             flightByCountryList: [],
-            flightByAirportList:[],
-            flightByCallsignList:[],
-            flightByEstimatedList:[],
-            flightByTimeOfList:[],
+            flightByAirportList: [],
+            flightByCallsignList: [],
+            flightByEstimatedList: [],
+            flightByTimeOfList: [],
             showLoader: !this.state.showLoader,
+            show: true
         });
 
-        HistoAirService.fetchAirports(airport,info).then((response) => {
+        HistoAirService.fetchAirports(airport, info).then((response) => {
             const newFlights = response.data;
             this.setState((prevState) => {
                 const newFlightsRef = [...newFlights];
@@ -71,7 +73,7 @@ class Home extends React.Component {
             this.setState({
                 showLoader: !this.state.showLoader,
             });
-            if(this.state.flightByCountryList.length < 1 ) this.setState({show:true});
+            if (this.state.flightByAirportList.length < 1) this.setState({show: false});
         });
 
     };
@@ -79,11 +81,12 @@ class Home extends React.Component {
     addCallsign = (callsign) => {
         this.setState({
             flightByCountryList: [],
-            flightByAirportList:[],
-            flightByCallsignList:[],
-            flightByEstimatedList:[],
-            flightByTimeOfList:[],
+            flightByAirportList: [],
+            flightByCallsignList: [],
+            flightByEstimatedList: [],
+            flightByTimeOfList: [],
             showLoader: !this.state.showLoader,
+            show: true
         });
 
         HistoAirService.fetchCallsign(callsign).then((response) => {
@@ -97,7 +100,7 @@ class Home extends React.Component {
             this.setState({
                 showLoader: !this.state.showLoader,
             });
-            if(this.state.flightByCountryList.length < 1 ) this.setState({show:true});
+            if (this.state.flightByCallsignList.length < 1) this.setState({show: false});
         });
 
     };
@@ -105,11 +108,12 @@ class Home extends React.Component {
     addEstimated = (time) => {
         this.setState({
             flightByCountryList: [],
-            flightByAirportList:[],
-            flightByCallsignList:[],
-            flightByEstimatedList:[],
-            flightByTimeOfList:[],
+            flightByAirportList: [],
+            flightByCallsignList: [],
+            flightByEstimatedList: [],
+            flightByTimeOfList: [],
             showLoader: !this.state.showLoader,
+            show: true
         });
         const timeInt = parseInt(time);
 
@@ -124,22 +128,23 @@ class Home extends React.Component {
             this.setState({
                 showLoader: !this.state.showLoader,
             });
-            if(this.state.flightByCountryList.length < 1 ) this.setState({show:true});
+            if (this.state.flightByEstimatedList.length < 1) this.setState({show: false});
         });
 
     };
 
-    addTimeOf = (before,date,type) => {
+    addTimeOf = (before, date, type) => {
         this.setState({
             flightByCountryList: [],
-            flightByAirportList:[],
-            flightByCallsignList:[],
-            flightByEstimatedList:[],
-            flightByTimeOfList:[],
+            flightByAirportList: [],
+            flightByCallsignList: [],
+            flightByEstimatedList: [],
+            flightByTimeOfList: [],
             showLoader: !this.state.showLoader,
+            show: true
         });
 
-        HistoAirService.fetchTimeOf(before,date,type).then((response) => {
+        HistoAirService.fetchTimeOf(before, date, type).then((response) => {
             const newFlights = response.data;
             this.setState((prevState) => {
                 const newFlightsRef = [...newFlights];
@@ -150,10 +155,11 @@ class Home extends React.Component {
             this.setState({
                 showLoader: !this.state.showLoader,
             });
-            if(this.state.flightByCountryList.length < 1 ) this.setState({show:true});
+            if (this.state.flightByTimeOfList.length < 1) this.setState({show: false});
         });
 
     };
+
     render() {
         return (
             <>
@@ -172,19 +178,24 @@ class Home extends React.Component {
                         </div>
                         <div className="col-7" style={{overflowY: "auto", maxHeight: 85 + "vh"}}>
                             <div className="row">
-                                <div style={{position: "absolute", top: 0+"px",left: 0+"px",bottom: 0+"px",right: 0+"px", display: "flex",alignItems: "center",overflow: "auto"}}>
-                                    <div style={{margin: "auto", maxHeight: 100+"%"}}>
-                                        <Loader type="Plane" color="#somecolor" height={80} width={80} visible={this.state.showLoader} />
+
+                                    <div style={{position: "absolute", top: 0+"px",left: 0+"px",bottom: 0+"px",right: 0+"px", display: "flex",alignItems: "center",overflow: "auto"}}>
+                                        <div style={{margin: "auto", maxHeight: 100+"%"}}>
+                                            <Loader type="Plane" color="#somecolor" height={80} width={80} visible={this.state.showLoader} />
+                                        </div>
                                     </div>
-                                </div>
-                                <div hidden={!this.state.show}
+
+                                <div hidden={this.state.show}
                                      className="row">
                                     <div style={{position: "absolute", top: 0+"px",left: 0+"px",bottom: 0+"px",right: 0+"px", display: "flex",alignItems: "center",overflow: "auto"}}>
                                         <div style={{margin: "auto", maxHeight: 100+"%"}}>
-                                            No data!</div>
+                                            No data!
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+
+
+
                                 <FlightsbyCountry flights={this.state.flightByCountryList}/>
                                 <FlightsbyAirport flights={this.state.flightByAirportList}/>
                                 <FlightsbyCallsign flights={this.state.flightByCallsignList}/>
@@ -193,6 +204,7 @@ class Home extends React.Component {
                             </div>
                         </div>
                     </div>
+                </div>
 
             </>
         )
