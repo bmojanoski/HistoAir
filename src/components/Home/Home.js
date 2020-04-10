@@ -20,7 +20,7 @@ class Home extends React.Component {
             flightByEstimatedList: [],
             flightByTimeOfList: [],
             showLoader: false,
-            show: true,
+            show: true
         };
     }
 
